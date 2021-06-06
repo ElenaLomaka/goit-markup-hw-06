@@ -404,14 +404,51 @@
 
    <div data-modal class="backdrop is-hidden">
        <div class="modal">
-        <form class=".js-speaker-form">
-            <label for="">Имя</label>
+        <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="js-speaker-form modal-form">
+                
+                 <label class="modal-form-field" for="user-name">Имя</label>
+                 <p class="modal-form-input-wrapper">
+                    <svg class="form-svg">
+                        <use href="./images/sprite.svg#icon-person"></use>
+                    </svg>
+                    <input type="text" name="user-name" class="modal-form-input" id="user-name">
+                 </p>
+
+                <label class="modal-form-field" for="usel-tel">Телефон</label>
+                <p class="modal-form-input-wrapper">
+                    <svg class="form-svg">
+                        <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <input type="tel" name="usel-tel" class="modal-form-input" id="usel-tel">
+                </p>
+
+                <label class="modal-form-field" for="usel-email">Почта</label>
+                <p class="modal-form-input-wrapper">
+                    <svg class="form-svg">
+                        <use href="./images/sprite.svg#icon-email"></use>
+                    </svg>
+                    <input type="email" name="usel-email" class="modal-form-input" id="usel-email">
+                </p>
+
+                <p class="modal-form-comment">
+                    <label class="modal-form-field" for="comment">Комментарий</label>
+                    <textarea name="comment" id="comment" placeholder="Введите текст" class="modal-form-input comment"></textarea>
+                </p>
+
+                <input type="checkbox" name="agreement" value="agreement" id="agreement">
+                <label for="agreement">Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a></label> 
+                
+                <button type="submit" class="button">Отправить</button>
+                
+                <button type="button" data-modal-close class="modal-close-btn">
+                    <svg class="modal-close-icon">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            
         </form>
-           <button type="button" data-modal-close class="modal-close-btn">
-               <svg class="modal-close-icon">
-                   <use href="./images/sprite.svg#icon-close"></use>
-               </svg>
-           </button>
+          
        </div>
    </div> 
 <script src="./js/modal.js"></script>

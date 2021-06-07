@@ -880,3 +880,38 @@ textarea {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+
+.checkbox-agreement {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.modal-form-checkbox-agreement {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.modal-form-checkbox-agreement::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+  border: var(--secondary-accent-color);
+  background-color: red;
+}
+
+.modal-form-checkbox-link {
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+
+.button.form-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

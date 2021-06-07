@@ -398,6 +398,18 @@
                 </li>
             </ul>
         </div>
+        <form class="subscribe">
+            <p class="subscribe-text">Подпишитесь на рассылку</p>
+            <span class="subscribe-wrapper">
+                <input type="email" class="subscribe-input" placeholder="E-mail" name="subscribe-email">
+                <button type="submit" class="button subscribe-btn">Подписаться
+                    <svg class="subscribe-svg">
+                        <use href="./images/sprite.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+            </span>
+        </form>
+
         </div>
    
     </footer>
@@ -407,24 +419,25 @@
         <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
         <form class="js-speaker-form modal-form">
                 
-                 <label class="modal-form-field" for="user-name">Имя</label>
+                 
                  <p class="modal-form-input-wrapper">
+                    <label class="modal-form-field" for="user-name">Имя</label>
                     <svg class="form-svg">
                         <use href="./images/sprite.svg#icon-person"></use>
                     </svg>
                     <input type="text" name="user-name" class="modal-form-input" id="user-name">
                  </p>
 
-                <label class="modal-form-field" for="usel-tel">Телефон</label>
                 <p class="modal-form-input-wrapper">
+                    <label class="modal-form-field" for="usel-tel">Телефон</label>
                     <svg class="form-svg">
                         <use href="./images/sprite.svg#icon-phone"></use>
                     </svg>
                     <input type="tel" name="usel-tel" class="modal-form-input" id="usel-tel">
                 </p>
 
-                <label class="modal-form-field" for="usel-email">Почта</label>
                 <p class="modal-form-input-wrapper">
+                    <label class="modal-form-field" for="usel-email">Почта</label>
                     <svg class="form-svg">
                         <use href="./images/sprite.svg#icon-email"></use>
                     </svg>
@@ -440,7 +453,7 @@
                 <label for="agreement">Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a></label> 
                 
                 <button type="submit" class="button">Отправить</button>
-                
+
                 <button type="button" data-modal-close class="modal-close-btn">
                     <svg class="modal-close-icon">
                         <use href="./images/sprite.svg#icon-close"></use>

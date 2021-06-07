@@ -449,10 +449,11 @@
                     <textarea name="comment" id="comment" placeholder="Введите текст" class="modal-form-input comment"></textarea>
                 </p>
 
-                <input type="checkbox" name="agreement" value="agreement" id="agreement">
-                <label for="agreement">Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a></label> 
+                <label for="agreement" class="modal-form-checkbox-agreement">Соглашаюсь с рассылкой и принимаю<a href="" class="modal-form-checkbox-link">Условия договора</a>
+                <input type="checkbox" name="agreement" value="agreement" id="agreement" class="checkbox-agreement">
+                </label>
                 
-                <button type="submit" class="button">Отправить</button>
+                <button type="submit" class="button form-btn">Отправить</button>
 
                 <button type="button" data-modal-close class="modal-close-btn">
                     <svg class="modal-close-icon">

@@ -801,6 +801,12 @@ footer {
   width: 18px;
   height: 18px;
   fill: #000000;
+  transition: fill var(--duration) var(--timing-function);
+}
+
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+  fill: var(--accent-color);
 }
 
 .is-hidden {

@@ -586,6 +586,7 @@ footer {
 }
 
 .subscribe-text {
+  display: block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -839,6 +840,19 @@ footer {
   margin-bottom: 10px;
 }
 
+.modal-form-input:focus + .form-svg,
+.modal-form-input:hover + .form-svg {
+  border-color: var(--accent-color);
+  outline: none;
+  fill: var(--accent-color);
+}
+
+.modal-form-input:focus,
+.modal-form-input:hover {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
 .form-svg {
   position: absolute;
   width: 18px;
@@ -848,6 +862,7 @@ footer {
   left: 12px;
   /* transform: translateY(-11px); */
   display: block;
+  transition: fill var(--duration) var(--timing-function);
 }
 
 .modal-form-input {
@@ -857,6 +872,7 @@ footer {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color var(--duration) var(--timing-function);
 }
 
 textarea {
@@ -886,21 +902,16 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  transition: box-shadow var(--duration) var(--timing-function);
 }
 
 .modal-form-checkbox-agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   line-height: 1.7;
-}
-
-.modal-form-checkbox-agreement::before {
-  content: '';
-  display: block;
-  width: 16px;
-  height: 15px;
-  cursor: pointer;
-  border: var(--secondary-accent-color);
-  background-color: red;
+  margin-bottom: 30px;
 }
 
 .modal-form-checkbox-link {
@@ -914,4 +925,31 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  margin-right: 9px;
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+  background-image: url(../images/icon-checkbox.svg);
+  transition: background-color var(--duration) var(--timing-function),
+    box-shadow var(--duration) var(--timing-function);
+}
+
+.checkbox-agreement:checked + .checkbox-icon {
+  background-image: url(../images/icon-check.svg);
+  background-color: var(--accent-color);
+}
+
+.checkbox-icon:hover,
+.checkbox-icon:focus {
+  background-color: var(--accent-color);
+  outline: none;
+}
+
+.checkbox-agreement:checked:hover + .checkbox-icon,
+.checkbox-agreement:checked:focus + .checkbox-icon {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }

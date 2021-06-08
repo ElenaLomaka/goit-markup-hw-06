@@ -399,9 +399,9 @@
             </ul>
         </div>
         <form class="subscribe">
-            <p class="subscribe-text">Подпишитесь на рассылку</p>
+            <label for="subscribe-email" class="subscribe-text">Подпишитесь на рассылку</label>
             <span class="subscribe-wrapper">
-                <input type="email" class="subscribe-input" placeholder="E-mail" name="subscribe-email">
+                <input type="email" class="subscribe-input" placeholder="E-mail" name="subscribe-email" id="subscribe-email">
                 <button type="submit" class="button subscribe-btn">Подписаться
                     <svg class="subscribe-svg">
                         <use href="./images/sprite.svg#icon-icon-send"></use>
@@ -422,26 +422,26 @@
                  
                  <p class="modal-form-input-wrapper">
                     <label class="modal-form-field" for="user-name">Имя</label>
-                    <svg class="form-svg">
-                        <use href="./images/sprite.svg#icon-person"></use>
-                    </svg>
-                    <input type="text" name="user-name" class="modal-form-input" id="user-name">
+                        <input type="text" name="user-name" class="modal-form-input" id="user-name">
+                        <svg class="form-svg">
+                            <use href="./images/sprite.svg#icon-person"></use>
+                        </svg>
                  </p>
 
                 <p class="modal-form-input-wrapper">
                     <label class="modal-form-field" for="usel-tel">Телефон</label>
+                    <input type="tel" name="usel-tel" class="modal-form-input" id="usel-tel">
                     <svg class="form-svg">
                         <use href="./images/sprite.svg#icon-phone"></use>
                     </svg>
-                    <input type="tel" name="usel-tel" class="modal-form-input" id="usel-tel">
                 </p>
 
                 <p class="modal-form-input-wrapper">
                     <label class="modal-form-field" for="usel-email">Почта</label>
+                    <input type="email" name="usel-email" class="modal-form-input" id="usel-email">
                     <svg class="form-svg">
                         <use href="./images/sprite.svg#icon-email"></use>
                     </svg>
-                    <input type="email" name="usel-email" class="modal-form-input" id="usel-email">
                 </p>
 
                 <p class="modal-form-comment">
@@ -449,8 +449,12 @@
                     <textarea name="comment" id="comment" placeholder="Введите текст" class="modal-form-input comment"></textarea>
                 </p>
 
-                <label for="agreement" class="modal-form-checkbox-agreement">Соглашаюсь с рассылкой и принимаю<a href="" class="modal-form-checkbox-link">Условия договора</a>
-                <input type="checkbox" name="agreement" value="agreement" id="agreement" class="checkbox-agreement">
+                <label class="modal-form-checkbox-agreement">
+                <input type="checkbox" name="agreement" value="agreement" class="checkbox-agreement">
+                <span class="checkbox-icon">
+                
+                </span>
+                Соглашаюсь с рассылкой и принимаю &#160<a href="" class="modal-form-checkbox-link">Условия договора</a>
                 </label>
                 
                 <button type="submit" class="button form-btn">Отправить</button>
